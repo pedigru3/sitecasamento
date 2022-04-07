@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-.cabeçalho h1 {
+.cabeçalho h1[data-scroll="in"] {
     animation-name: decima;
     animation-duration: 1s;
 }
@@ -37,7 +37,9 @@
     border-radius: 50%;
 
     object-fit: cover;
+}
 
+.cabeçalho__img[data-scroll="in"] {    
     animation-name: daesquerda;
     animation-duration: 1s;
 }
@@ -46,7 +48,9 @@
     margin-top: 32px;
     color: white;
     line-height: 19.5px;
+}
 
+.cabeçalho__paragrafo[data-scroll="in"]{
     animation-name: dadireita;
     animation-duration: 1s;
 }
@@ -66,6 +70,14 @@
     border-radius: 18px;
     padding: 16px 52px;
     box-sizing: border-box;
+}
+
+.infos__caixa:nth-child(1)[data-scroll="in"]{
+    animation: daesquerda 1s;
+}
+
+.infos__caixa:nth-child(2)[data-scroll="in"]{
+    animation: dadireita 1s;
 }
 
 .infos__caixa h2 {
@@ -121,6 +133,9 @@
 .versiculo {
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.versiculo__caixa[data-scroll="in"]{
     animation: daesquerda 1s;
 }
 
