@@ -5,14 +5,18 @@
     from {transform: translateY(-100px);
         opacity: 0;
     }
+    to {opacity: 1;}
 }
 
 @keyframes daesquerda {
     from {transform: translateX(-90px); opacity: 0;}    
+    to {opacity: 1;}
 }
+    
 
 @keyframes dadireita {
-    from {transform: translateX(90px); opacity: 0;}    
+    from {transform: translateX(90px); opacity: 0;}   
+    to {opacity: 1;} 
 }
 
 .cabeçalho {
@@ -25,9 +29,15 @@
     text-align: center;
 }
 
+.cabeçalho h1 {
+    opacity: 0;
+}
+
 .cabeçalho h1[data-scroll="in"] {
     animation-name: decima;
     animation-duration: 1s;
+    animation-fill-mode: forwards;   
+    
 }
 
 .cabeçalho__img {
@@ -35,24 +45,23 @@
     width: 222px;
     height: 222px;
     border-radius: 50%;
-
+    opacity: 0;  
     object-fit: cover;
 }
 
 .cabeçalho__img[data-scroll="in"] {    
-    animation-name: daesquerda;
-    animation-duration: 1s;
+    animation: daesquerda 1s forwards;
 }
 
 .cabeçalho__paragrafo {
     margin-top: 32px;
     color: white;
     line-height: 19.5px;
+    opacity: 0;
 }
 
 .cabeçalho__paragrafo[data-scroll="in"]{
-    animation-name: dadireita;
-    animation-duration: 1s;
+    animation: dadireita 1s forwards;
 }
 
 .infos {
@@ -70,14 +79,15 @@
     border-radius: 18px;
     padding: 16px 52px;
     box-sizing: border-box;
+    opacity: 0;
 }
 
 .infos__caixa:nth-child(1)[data-scroll="in"]{
-    animation: daesquerda 1s;
+    animation: daesquerda 1s forwards;
 }
 
 .infos__caixa:nth-child(2)[data-scroll="in"]{
-    animation: dadireita 1s;
+    animation: dadireita 1s forwards;
 }
 
 .infos__caixa h2 {
@@ -136,7 +146,7 @@
 }
 
 .versiculo__caixa[data-scroll="in"]{
-    animation: daesquerda 1s;
+    animation: daesquerda 1s forwards;
 }
 
 .versiculo__caixa {
@@ -145,6 +155,7 @@
     color: var(--bege);
     text-align: center;
     padding: 3rem;
+    opacity: 0;
 }
 
 .formulario {
