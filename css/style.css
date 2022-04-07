@@ -1,6 +1,20 @@
 @import url("reset.css");
 @import url("base.css");
 
+@keyframes decima{
+    from {transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes daesquerda {
+    from {transform: translateX(-90px); opacity: 0;}    
+}
+
+@keyframes dadireita {
+    from {transform: translateX(90px); opacity: 0;}    
+}
+
 .cabeçalho {
     padding-top: 56px;
     padding-bottom: 32px;
@@ -11,6 +25,11 @@
     text-align: center;
 }
 
+.cabeçalho h1 {
+    animation-name: decima;
+    animation-duration: 1s;
+}
+
 .cabeçalho__img {
     margin-top: 40px;
     width: 222px;
@@ -18,12 +37,18 @@
     border-radius: 50%;
 
     object-fit: cover;
+
+    animation-name: daesquerda;
+    animation-duration: 1s;
 }
 
 .cabeçalho__paragrafo {
     margin-top: 32px;
     color: white;
     line-height: 19.5px;
+
+    animation-name: dadireita;
+    animation-duration: 1s;
 }
 
 .infos {
@@ -94,7 +119,8 @@
 }
 
 .versiculo {
-    padding: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .versiculo__caixa {
@@ -103,4 +129,72 @@
     color: var(--bege);
     text-align: center;
     padding: 3rem;
+}
+
+.formulario {
+    margin-bottom: 3rem;
+}
+
+.formulario__grupo {
+    transition: all .3s;
+}
+
+.formulario__grupo:focus-within {
+    transform:scale(1.05,1.00);
+}
+
+.formulario__input {
+    width: 100%;
+    padding: 1.5rem 1rem 0.5rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline-color: var(--laranja);
+    margin-bottom: 5px;
+
+    transition: all .5s;
+}
+
+.formulario__label {
+    display: block;
+    color: gray;
+    padding-left: 15px;    
+    transform: translateY(-2.2em);    
+    transform-origin: 0 0;
+
+    transition: all .3s;
+}
+
+.formulario__input:focus + .formulario__label,
+.formulario__input:not(:placeholder-shown) + .formulario__label {
+    transform: translateY(-2.8em) scale(.8);
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    background: var(--laranja);
+    font-weight: 700;
+    color: var(--branco);
+    
+    font-family: var(--montserrat);
+}
+
+.rodape {
+    padding: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: var(--branco);
+    background: var(--verde-claro);
+}
+
+.rodape h3 {
+    font-family: var(--dancing);
+    font-size: 22px;
+    padding-bottom: 0.5em;
+}
+
+.rodape p {
+    font-size: 12px;
 }

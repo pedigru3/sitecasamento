@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <section class="cabeçalho container-cab">
+        <section class="cabeçalho container">
             <h1>Vamos nos casar!</h1>
             <img class="cabeçalho__img" src="img/foto1.jpg" alt="Felipe e Niège">
             <p class="cabeçalho__paragrafo">Fulano, ficaremos muito felizes de ter você na celebração do nosso casamento. Queremos muito que participe do momento mais marcante de nossas vidas. Esperamos te ver lá.</p>
@@ -30,6 +30,8 @@
                 <p>R. Santo Rosa, 96 </br>Jardim do Alvinopolis,</br>Atibaia</p>
             </div>
         </section>
+    </header>
+    <main>
         <section class="historia">
             <div class="historia__esquerda">
                 <img class="historia__img" src="img/inicio.jpg" alt="">
@@ -47,7 +49,7 @@
                 <p>Decidimos tomar a grande decisão de nos casar, não apenas porque nos amamos, mas porque sabemos que este é o propósito de Deus a fim de que Ele seja glorificado.</p>
             </div>
         </section>
-        <section class="versiculo container-cab">
+        <section class="versiculo container">
             <div class="versiculo__caixa">
                 <p>Como é feliz quem teme ao Senhor, quem anda em seus caminhos!</br>
                     Você comerá do fruto do seu trabalho, e será feliz e próspero.</br>
@@ -57,6 +59,23 @@
                     Salmos 128:1-3</p>
             </div>
         </section>
-    </header>
+        <section class="formulario container">
+            <form action="">
+                <div class="formulario__grupo">
+                    <input type="text" id="name" class="formulario__input" placeholder=" ">
+                    <label class="formulario__label" for="name">Nome Completo</label>
+                </div>
+                <div class="formulario__grupo">
+                    <input class="formulario__input" type="tel" id="celular" placeholder=" ">
+                    <label class="formulario__label" for="celular">Celular</label>
+                </div>    
+                <button>Confirmar presença</button>
+            </form>            
+        </section>
+    </main>
+    <footer class="rodape">
+        <h3>Felipe e Niège</h3>
+        <p>Todos os direitos reservados &#169; 2022</p>
+    </footer>
 </body>
 </html>
