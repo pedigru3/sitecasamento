@@ -1,0 +1,42 @@
+:root {
+    --verde-musgo: #2A534F;
+    --verde-claro: #206467;
+    --laranja: #C16732;
+    --marrom: #624D3A;
+    --bege: #E5C1A1;
+    --branco: #FFFFFF;
+    --montserrat: 'Montserrat', sans-serif;
+    --dancing: 'Dancing Script', cursive;
+}
+
+html {
+    background: var(--verde-musgo);
+}
+
+body {
+    font-family: var(--montserrat);
+}
+
+p {
+    line-height: 19.5px;
+}
+
+h1 {
+    font-family: var(--dancing);
+    font-size: 64px;
+    color: var(--bege);
+}
+
+h2 {
+    font-family: var(--dancing);
+    font-size: 56px;
+    color: var(--bege);
+}
+
+.container {
+    padding: 0 2rem;
+}
+
+.container-cab {
+    padding: 0 2.5rem;
+}
