@@ -121,6 +121,7 @@
 .versiculo {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    animation: daesquerda 1s;
 }
 
 .versiculo__caixa {
