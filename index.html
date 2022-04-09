@@ -60,23 +60,24 @@
             </div>
         </section>
         <section class="formulario container">
-            <form action="">
+            <form id="form" action="">
                 <div class="formulario__grupo">
-                    <input type="text" id="name" class="formulario__input" placeholder=" ">
+                    <input type="text" id="name" class="formulario__input" placeholder=" " required>
                     <label class="formulario__label" for="name">Nome Completo</label>
                 </div>
                 <div class="formulario__grupo">
                     <input class="formulario__input" type="tel" id="celular" placeholder=" ">
                     <label class="formulario__label" for="celular">Celular</label>
                 </div>    
-                <button>Confirmar presença</button>
+                <button type="submit">Confirmar presença</button>
             </form>            
         </section>
     </main>
     <footer class="rodape">
         <h3>Felipe e Niège</h3>
         <p>Todos os direitos reservados &#169; 2022</p>
-    </footer>
+    </footer>    
+    <script src="js/main.js"></script>
     <script src="js/scroll-out.js"></script>
     <script type="text/javascript">
         ScrollOut({
