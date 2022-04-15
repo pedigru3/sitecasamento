@@ -98,6 +98,15 @@
     color: white;
 }
 
+.infos__caixa:last-child {
+    transition: all .2s;
+}
+
+.infos__caixa:last-child:hover {
+    background: var(--laranja);
+    transform: scale(1.1);
+}
+
 .historia {
     background: var(--branco);
     padding-bottom: 3rem;
