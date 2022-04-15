@@ -158,6 +158,40 @@
     opacity: 0;
 }
 
+.presentes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--laranja);
+    height: 200px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.presentes h1 {
+    font-size: 52px;
+}
+
+.presentes p {
+    padding-top: 1em;
+    color: var(--bege);
+}
+
+.lista-presentes {
+    display: block;
+    background: rgba(229, 229, 229, 0.30);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--verde-musgo);
+}
+
+.lista-presentes:hover{
+    background: var(--branco);
+}
+
 .formulario {
     margin-bottom: 3rem;
 }

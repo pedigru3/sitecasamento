@@ -10,11 +10,14 @@
 }
 
 html {
-    background: var(--verde-musgo);
+    background: white;
 }
 
 body {
+    background: var(--verde-musgo);
     font-family: var(--montserrat);
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 p {
