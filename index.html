@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <title>Felipe e Niège</title>
 </head>
+
 <body>
     <header>
         <section class="cabeçalho container">
             <h1>Vamos nos casar!</h1>
             <img class="cabeçalho__img" src="img/foto1.jpg" alt="Felipe e Niège">
-            <p class="cabeçalho__paragrafo">Fulano, ficaremos muito felizes de ter você na celebração do nosso casamento. Queremos muito que participe do momento mais marcante de nossas vidas. Esperamos te ver lá.</p>
+            <p class="cabeçalho__paragrafo">Fulano, ficaremos muito felizes de ter você na celebração do nosso
+                casamento. Queremos muito que participe do momento mais marcante de nossas vidas. Esperamos te ver lá.
+            </p>
         </section>
         <section class="infos">
             <div class="infos__caixa">
@@ -24,13 +30,15 @@
                 <p style="font-weight: 700;">26.11.2022</p>
                 <p>Sábado - 15 horas</p>
             </div>
-            <a class="link" href="https://www.google.com/maps/place/R.+Santo+Rosa,+96+-+Jardim+do+Alvinopolis,+Atibaia+-+SP,+12943-030/@-23.119485,-46.5742807,17z/data=!3m1!4b1!4m5!3m4!1s0x94cec138f88706b5:0x5b7c4c2054f0c732!8m2!3d-23.119485!4d-46.572092" target="_blank">
+            <a class="link"
+                href="https://www.google.com/maps/place/R.+Santo+Rosa,+96+-+Jardim+do+Alvinopolis,+Atibaia+-+SP,+12943-030/@-23.119485,-46.5742807,17z/data=!3m1!4b1!4m5!3m4!1s0x94cec138f88706b5:0x5b7c4c2054f0c732!8m2!3d-23.119485!4d-46.572092"
+                target="_blank">
                 <div class="infos__caixa">
                     <h2>Onde?</h2>
                     <p style="font-weight: 700;">PIBA</p>
                     <p>R. Santo Rosa, 96 </br>Jardim do Alvinopolis,</br>Atibaia</p>
                 </div>
-            </a>            
+            </a>
         </section>
     </header>
     <main>
@@ -38,17 +46,20 @@
             <div class="historia__esquerda">
                 <img class="historia__img" src="img/inicio.jpg" alt="">
                 <div class="borda"></div>
-                <p>Decidimos tomar a grande decisão de nos casar, não apenas porque nos amamos, mas porque sabemos que este é o propósito de Deus a fim de que Ele seja glorificado.</p>
+                <p>Decidimos tomar a grande decisão de nos casar, não apenas porque nos amamos, mas porque sabemos que
+                    este é o propósito de Deus a fim de que Ele seja glorificado.</p>
             </div>
             <div class="historia__direita">
                 <div class="borda__direita"></div>
-                <p>Somos gratos a Deus por termos nos conhecido na igreja e hoje termos o entendimento de que, se estamos casando, é para que mais pessoas conheçam a Cristo.</p>
+                <p>Somos gratos a Deus por termos nos conhecido na igreja e hoje termos o entendimento de que, se
+                    estamos casando, é para que mais pessoas conheçam a Cristo.</p>
                 <img class="historia__img" src="img/meio.jpg" alt="">
             </div>
             <div class="historia__esquerda">
                 <img class="historia__img" src="img/noivos.jpeg" alt="">
                 <div class="borda"></div>
-                <p>Decidimos tomar a grande decisão de nos casar, não apenas porque nos amamos, mas porque sabemos que este é o propósito de Deus a fim de que Ele seja glorificado.</p>
+                <p>Decidimos tomar a grande decisão de nos casar, não apenas porque nos amamos, mas porque sabemos que
+                    este é o propósito de Deus a fim de que Ele seja glorificado.</p>
             </div>
         </section>
         <section class="versiculo container">
@@ -57,13 +68,13 @@
                     Você comerá do fruto do seu trabalho, e será feliz e próspero.</br>
                     Sua mulher será como videira frutífera em sua casa; seus filhos
                     serão como brotos de oliveira ao redor da sua mesa.</br></br>
-                    
+
                     Salmos 128:1-3</p>
             </div>
         </section>
         <section class="presentes">
             <div class="presentes__titulo">
-                <h1>Presenteie-nos</h1>
+                <h2>Presenteie-nos</h2>
                 <p>Pix: ferreira.contato1@gmail.com</p>
                 <a href="http://finalfeliz.de/felipe-niege" class="lista-presentes">Ir para lista de presentes</a>
             </div>
@@ -76,13 +87,25 @@
                     <label class="formulario__label" for="name">Nome Completo</label>
                 </div>
                 <button type="submit">Confirmar presença</button>
-            </form>            
+            </form>
         </section>
+
     </main>
     <footer class="rodape">
         <h3>Felipe e Niège</h3>
         <p>Todos os direitos reservados &#169; 2022</p>
-    </footer>    
+    </footer>
+
+    <div id="modal-popup" class="modal-container">
+        <div class="modal">
+            <h3>Insira o seu nome</h3>
+            <form id="form2">
+                <input type="text" id="fname" class="formulario__input" placeholder=" " required>
+                <button type="submit">Logar</button>
+            </form>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
     <script src="js/scroll-out.js"></script>
     <script type="text/javascript">
@@ -91,4 +114,5 @@
         })
     </script>
 </body>
+
 </html>
